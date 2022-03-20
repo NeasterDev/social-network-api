@@ -52,4 +52,5 @@ const ThoughtSchema = new Schema({
             getters: true
         },
         id: false
-    })
+    }
+);
