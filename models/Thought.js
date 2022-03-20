@@ -37,7 +37,7 @@ const ThoughtSchema = new Schema({
     },
     createdAt: {
         type: Date,
-        default: Date.new()
+        default: Date.now()
         // getter to format date
     },
     username: {
@@ -54,3 +54,7 @@ const ThoughtSchema = new Schema({
         id: false
     }
 );
+
+const Thought = model('Thought', ThoughtSchema);
+
+module.exports = Thought;
