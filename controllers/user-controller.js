@@ -22,7 +22,7 @@ const userController = {
     createUser({ body }, res) {
         User.create(body)
         .then(dbUserData => res.json(dbUserData))
-        .catch(err => res.status(500).json(err));
+        .catch(err => res.status(500).json({message: "ERROR!", err}));
     },
 
     updateUser({ params, body }, res) {
