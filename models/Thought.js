@@ -29,8 +29,8 @@ const reactionSchema = new Schema({
             virtuals: true,
             getters: true
         },
-        id: false
-    })
+        _id: false
+})
 
 const ThoughtSchema = new Schema({
     thoughtText: {
